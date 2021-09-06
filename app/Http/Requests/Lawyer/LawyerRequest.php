@@ -26,7 +26,6 @@ class LawyerRequest extends FormRequest
         return [
             'first_name'=>'required|string|min:2|max:150',
             'last_name'=>'required|string|min:2|max:150',
-            'email' => 'required|email|unique:lawyers,email',
             'birth'=>'required|date',
             'picture'=> 'nullable|file|image|max:10240'
         ];
@@ -37,7 +36,6 @@ class LawyerRequest extends FormRequest
         return [
             'first_name' => 'Primer Nombre',
             'last_name' => 'Segundo Nombre',
-            'email' => 'Correo electronico',
             'birth' => 'Fecha de Nacimiento',
             'picture' => 'Foto de Perfil',
         ];

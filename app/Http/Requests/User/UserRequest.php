@@ -24,8 +24,16 @@ class UserRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required|email',
-            'password' => 'required|confirmed|min:6'
+            'email' => 'required|email|unique:users',
+            'password' => 'required|confirmed|min:8'
+        ];
+    }
+
+    public function attributes()
+    {
+        return [ 
+            'email' => 'el ya se encuentra registrado',
+            'password' => 'el passwor debe teer minimo 8 caracteres'
         ];
     }
 }

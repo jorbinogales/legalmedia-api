@@ -17,7 +17,7 @@ class LawyerController extends Controller
      */
     public function index()
     {
-        return $this->showAll(LawyerResource::collection(Lawyer::get()));
+        return $this->showAll(LawyerResource::collection(Lawyer::where('authorized', true)->get()));
     }
 
 
