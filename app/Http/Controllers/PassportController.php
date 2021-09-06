@@ -68,13 +68,17 @@ class PassportController extends Controller
                 $user = User::create([
                     'email' => $request->email,
                     'password' => 'undefined',
-                    'passport' => $request->provider,
+                    'provider' => $request->provider,
                 ]);
-                $lawyer = Lawyer::create([
-                    'user_id' => $user->id,
+
+                $lawyer = new Lawyer([
                     'name' => $request->name,
                     'picture' => $request->photoUrl,
+                    'authorized' => false,
                 ]);
+
+                $user->lawyer()->save($lawyer);
+    
                 $token = $user->createToken('personal access token')->accessToken;
                 Mail::to($user->email)->send(new SucessFullRegister());     
             } else { 

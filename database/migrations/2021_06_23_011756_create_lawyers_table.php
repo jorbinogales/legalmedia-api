@@ -19,7 +19,7 @@ class CreateLawyersTable extends Migration
             $table->string('name');
             $table->date('birth')->nullable();
             $table->string('picture')->nullable();
-            $table->boolean('authorized')->defualt(false);
+            $table->boolean('authorized')->default(false);
             $table->timestamps();
             $table->softDeletes();
         });
