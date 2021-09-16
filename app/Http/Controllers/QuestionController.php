@@ -11,6 +11,7 @@ use App\Http\Requests\QuestionRequest;
 use App\Http\Resources\QuestionResource;
 use App\Mail\QuestionMail;
 use Mail;
+use Exception;
 
 class QuestionController extends Controller
 {
@@ -33,23 +34,14 @@ class QuestionController extends Controller
     public function store(QuestionRequest $request)
     {
         try {
-
             $question = Question::create($request->validated());
-
             $users = User::all();
-
             foreach($users as $user):
-
                 Mail::to($user->email)->send(new QuestionMail($question));
-
             endforeach;
-
             return  $this->successFullResponse();
-            
         } catch (Exception $e){
-
             return $e;
-
         }
     }
 
@@ -61,7 +53,11 @@ class QuestionController extends Controller
      */
     public function show(Question $question)
     {
-        //
+        try{
+            return $this->showOne(new QuestionResource($question));
+        } catch (Exception $e){
+            return $e;
+        }
     }
 
     /**

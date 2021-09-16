@@ -51,8 +51,11 @@ Route::middleware('api')->group(function () {
     Route::prefix('question')->group(function(){
         Route::get('', [QuestionController::class, 'index']);
         Route::post('', [QuestionController::class, 'store']);
-        Route::get('count',[QuestionController::class, 'count']);
         Route::get('last', [QuestionController::class, 'last']);
+        Route::get('count',[QuestionController::class, 'count']);
+        Route::apiResource('', QuestionController::class, array('as' => 'question'))
+                    ->except(['index', 'store', 'last', 'count'])
+                    ->parameters(['' => 'question']);
     });
 
      /* LAWYER  */

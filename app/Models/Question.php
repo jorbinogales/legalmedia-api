@@ -15,6 +15,7 @@ class Question extends Model
     protected $fillable = [
         'text',
         'people_id',
+        'created_at',
     ];
 
     /**
@@ -34,7 +35,7 @@ class Question extends Model
      */
     public function answering()
     {
-        return $this->hasOne(Answering::class);
+        return $this->hasMany(Answering::class);
     }
 
 

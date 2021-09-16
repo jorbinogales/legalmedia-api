@@ -18,6 +18,8 @@ class QuestionResource extends JsonResource
             'id' => $this->id,
             'text' => $this->text,
             'people_id' => $this->people,
+            'created_at' => $this->created_at,
+            'answering_value'  => $this->answering,
         ];
     }
 }
