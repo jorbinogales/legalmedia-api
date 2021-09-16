@@ -15,7 +15,7 @@ class CreateAnsweringsTable extends Migration
     {
         Schema::create('answerings', function (Blueprint $table) {
             $table->id();
-            $table->string('text');
+            $table->longText('description');
             $table->foreignId('lawyer_id')->constrained('lawyers')->onDelete('cascade');
             $table->foreignId('question_id')->constrained('questions')->onDelete('cascade');
             $table->timestamps();
