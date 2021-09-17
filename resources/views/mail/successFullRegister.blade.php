@@ -41,8 +41,8 @@
            display:block;
             max-width: 600px;
             background-color:white;
-            border: 12px solid var(--bg-blue);
-            border-radius: var(--radius);
+            border: 12px solid  #00273f;
+            border-radius: 25px;
             padding: 10px 25px;
        }
 
@@ -52,7 +52,7 @@
        }
 
        .card h4{
-           color: var(--bg-gold);
+           color: #a67c00;
            font-weight:bold;
        }
 
@@ -67,8 +67,8 @@
        }
 
        .card .msg{
-           background-color: var(--bg-blue);
-           border-radius: var(--radius);
+           background-color: #00273f;
+           border-radius:25px;
            padding: 15px 15px;
        }
 
@@ -76,7 +76,7 @@
            display:block;
            width: 100%;
            height: 3px;
-           background: var(--bg-gold);
+           background: v#a67c00;
            opacity: .5;
        }
 
@@ -95,7 +95,7 @@
        }
 
        .card .btn.btn-blue{
-           background-color: var(--bg-blue);
+           background-color: #00273f;
            color:white;
        }
 	</style>
