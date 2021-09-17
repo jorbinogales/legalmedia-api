@@ -6,21 +6,14 @@
 	<title>Bienvenido Abogado</title>
 	<style>
 
-        :root {
-        --bg-blue-strong: #00273f;
-        --bg-blue: #003656;
-        --bg-gold: #a67c00;
-        --bg-gray: rgba(0, 39, 63, 0.25);
-        --bg-danger: #dc3545;
-        --bg-success: #28a745;
-        --bg-transparent: #ADAA88;
-        --radius: 25px;
-        }
+
 
        .card ul{
            display:flex;
            flex-wrap: wrap;
            list-style: none;
+           margin:auto;
+           position: relative;
        }
 
 
