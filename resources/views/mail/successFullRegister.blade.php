@@ -104,7 +104,7 @@
 	<div class="card">
         <ul style="position:relative;">
             <li class="w-40">
-               <img src="https://ecommerce.legalmedia.tech/assets/img/email1.png" class="people" style="position:absolute; bottom:0px; width: 26%;">
+               <img src="https://ecommerce.legalmedia.tech/assets/img/email1.png" class="people" style="position:absolute; bottom:0px;">
             </li>
             <li class="w-60">
                 <h4>BIENVENIDO A </h4>
