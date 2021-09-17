@@ -104,11 +104,11 @@
 	<div class="card">
         <ul style="position:relative;">
             <li class="w-40">
-               <img src="http://localhost:4200/assets/img/email1.png" class="people" style="position:absolute; bottom:0px; width: 26%;">
+               <img src="https://ecommerce.legalmedia.tech/assets/img/email1.png" class="people" style="position:absolute; bottom:0px; width: 26%;">
             </li>
             <li class="w-60">
                 <h4>BIENVENIDO A </h4>
-                <img src="http://localhost:4200/assets/img/logo.png">
+                <img src="https://ecommerce.legalmedia.tech/assets/img/logo.png">
 
                 <div class="msg">
                     <p>
@@ -141,7 +141,7 @@
                 </div>
             </li>
             <li class="w-60">
-                <img src="http://localhost:4200/assets/img/email2.png">
+                <img src="https://ecommerce.legalmedia.tech/assets/img/email2.png">
             </li>
         </ul>
 
@@ -149,7 +149,7 @@
 
          <ul>
             <li class="w-60">
-                 <img src="http://localhost:4200/assets/img/email3.png">
+                 <img src="https://ecommerce.legalmedia.tech/assets/img/email3.png">
                
             </li>
             <li class="w-40">
@@ -183,7 +183,7 @@
                 </div>
             </li>
             <li class="w-60">
-                <img src="http://localhost:4200/assets/img/email4.png">
+                <img src="https://ecommerce.legalmedia.tech/assets/img/email4.png">
                
             </li>
         </ul>
@@ -192,7 +192,7 @@
 
          <ul>
             <li class="w-60">
-                 <img src="http://localhost:4200/assets/img/email5.png">
+                 <img src="https://ecommerce.legalmedia.tech/assets/img/email5.png">
                
             </li>
             <li class="w-40">
